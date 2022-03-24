@@ -1,33 +1,297 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo List App pn JavaScript</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Website</title>
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="task-input">
-        <img class="icon-Search" src="/download.png" alt="icon" />
-        <input type="text" placeholder="add a new task" />
-      </div>
-      <div class="controls">
-        <div class="filters">
-          <span id="all" class="active">All</span>
-          <span id="pending">pending</span>
-          <span id="completed">completed</span>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/Simple Futuristic Pink Coding Logo (2).png" alt="" />
+        </a>
+        <!--<button
+          class="navbar-toggler"
+          type="menu"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Home</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5500/index.html#codes">Codes</a>
+          <a class="dropdown-item" href="img/To-do App/index.html" target="_blank">To-Do App</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5500/index.html#Contact">Connect</a>
+          <a class="dropdown-item" href="http://127.0.0.1:5500/index.html#About">About</a>
         </div>
-        <button class="clear-btn">Clear All</button>
+      </li>
+       </ul>
+        <!--<div class="collapse navbar-collapse" id="navbarResponsive"></div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Codes</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="img/To-do App/index.html" target="_blank">To-Do App</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5500/index.html#Contact">Connect</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5500/index.html#About">About</a>
+          </li>
+
+        </ul>-->
       </div>
-      <ul class="task-box"></ul>
+    </nav>
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <!--<li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li><!-->
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/background.png" alt="background" />
+          <div class="carousel-caption">
+            <h1 class="display-2">Javandroid</h1>
+            <h3>Complete Website layout</h3>
+            <!--<button type="button" class="btn btn-outline-light btn-lg">
+              View Demo
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              Get started
+            </button>-->
+          </div>
+        </div>
+        <!--<div class="carousel-item">
+          <img src="img/background2.png" alt="background" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/background3.png" alt="background" />
+        </div>-->
+      </div>
     </div>
-    <script src="script.js"></script>
-    <p class="updateComing">Site will be update soon ...</p>
+    <!--- Jumbotron -->
+    <!--<div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p>
+            We will grow more and more. We will grow more and more. We will grow
+            more and more.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <a href="#"
+            ><button type="button" class="btn btn-outline-secondary btn-lg">
+              Grow with us
+            </button></a
+          >
+        </div>
+      </div>
+    </div>-->
+    <!--- Welcome Section -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Javandroid</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">Some Language introduce</p>
+        </div>
+      </div>
+    </div>
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-code"></i>
+          <h3>HTML</h3>
+          <p>HTML (HyperText Markup Language) is the most basic building block of the Web</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img src="img/128px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+          <h3>JavaScript</h3>
+          <p>JavaScript often abbreviated JS, is a programming language that
+             is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+            <p>Over 97% of websites use JavaScript on the client side for web page behavior,
+              often incorporating third-party libraries.
+              All major web browsers have a dedicated JavaScript engine to execute the code on users' devices..</p>             
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fab fa-css3"></i>
+          <h3>CSS</h3>
+          <p>Cascading Style Sheets (CSS) is a style sheet language used for describing
+             the presentation of a document written in a markup language such as HTML.</p>
+             <p>CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i ></i>
+          <img class="java-pic" src="img/198-1984828_java-icon-transparent-hd-png-download.png" alt="">
+          <h3>Java</h3>
+          <p>Java is a high-level, class-based, object-oriented programming language
+             that is designed to have as few implementation dependencies as possible.</p>
+            <p>It is a general-purpose programming language intended to let programmers write once, run anywhere</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img class="py-logo" src="img/64px-Python-logo-notext.svg.png" alt="">
+          <h3>Python</h3>
+          <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes
+             code readability with the use of significant indentation.</p>
+            <p>Its language constructs and object-oriented approach aim to help programmers write clear,
+               logical code for small- and large-scale projects.</p>             
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+    <!--- Two Column Section -->
+    <!--<div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+          <h2>Entering the new world</h2>
+          <p>Something0</p>
+          <p>Something1</p>
+          <p>hello to you All</p>
+          <br />
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="col-lg-6 ">
+          <img src="img/Simple Futuristic Pink Coding Logo.png" alt="desk" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <hr />-->
+    <!--- Fixed background -->
+    <figure>
+      <div class="fixed-wrap"><div id="fixed"></div></div>
+    </figure>
+    <!--- Emoji Section -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">
+      click for fun
+    </button>
+    <div id="emoji" class="collapse">
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class=" col-sm-3">
+            <img class="gif" src="img/gif/panda.gif" alt="panda" />
+          </div>
+          <div class=" col-sm-3">
+            <img class="gif" src="img/gif/poo.gif" alt="poo" />
+          </div>
+          <div class=" col-sm-3">
+            <img class="gif" src="img/gif/unicorn.gif" alt="unicorn" />
+          </div>
+          <div class=" col-sm-3">
+            <img class="gif" src="img/gif/chicken.gif" alt="chicken" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- Meet the team 
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Meet The teem</h1>
+        </div>
+        <hr />
+      </div>
+    </div>-->
+    <!--- Cards -->
+    <div class="container-fluid padding">
+      <div class="row padding ">
+        <div class="col-md-4 offset-md-4">
+          <div class="card" id="1">
+            <img class="card-img-top" src="img/team1.png" alt="team" />
+            <div class="card-body">
+              <h4 class="card-title"><a id="About">Morteza</a></h4>
+              <p class="card-text">a serverside programmer</p>
+              <!--<a href="#" class="btn btn-outline-secondary">See Profile</a>-->
+            </div>         
+          </div>         
+        </div>               
+      </div>
+    <!--- Two Column Section 
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+          <h2>our Story</h2>
+          <p>Something0</p>
+          <p>Something1</p>
+          <br>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/bootstrap2.png" alt="desk" class="img-fluid" />
+        </div>
+      </div>
+      <hr class="my-4">      
+    </div>-->
+    
+    <!--- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-12">
+    <h2><a id="Contact">Contact Me</a></h2>
+  </div>
+  <div class="col-12 social padding">
+    <a href="https://www.instagram.com/javandroid0/"target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://t.me/Javandroid0/"target="_blank"><i class="fab fa-telegram"></i></a>
+  </div>
+</div>
+</div>
+    <!--- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img class="buttom" src="img/Simple Futuristic Pink Coding Logo (2).png" alt="">
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <a id="codes"><h5>Source Codes</h5></a>
+          <hr class="light">
+          <p>RainBow</p>
+          <p>RndCircle</p>
+          <p>Timer</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Source Codes</h5>
+          <hr class="light">
+          <p>Week day num finder</p>
+          <p>Tetris</p>
+          <p>odd or even num finder</p>
+        </div>
+        <div class="col-12">
+          <hr class="light">
+          <!--<h5><a href="https://javandroid0.github.io/Javandroid.github.io/">https://javandroid0.github.io/Javandroid.github.io/</a></h5>-->     
+          <p>javandroid0.github.io/Javandroid.github.io</p>     
+        </div>
+      </div>  
+      </div>
+    </footer>
   </body>
 </html>
+
+

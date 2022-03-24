@@ -1,153 +1,190 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.icon-Search {
-  height: 25px;
-  width: 50px;
-  border-radius: 10px;
-}
-body {
-  overflow: hidden;
-  background: #3c87ff;
-}
-.wrapper {
-  max-width: 405px;
-  margin: 50px auto;
-  background: white;
-  border-radius: 7px;
-  padding: 28px 0;
-}
-.task-input {
-  height: 52px;
-  padding: 0 25px;
-  position: relative;
-}
-.task-input img {
-  position: absolute;
-  top: 50%;
-  transform: translate(17px, -50%);
-}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 
-.task-input input {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid #999;
-  padding: 0 20px 0 70px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+.nav-item {
+  padding: 0;
+  padding-right: 30px;
+  list-style-type: none;
+}
+.logo {
+  width: 60px;
+  height: 50px;
+}
+.java-pic {
+  width: 150px;
+  height: 150px;
+}
+.py-logo {
+  width: 25%;
 }
 
-.task-input input::placeholder {
-  color: #bfbfbf;
+.nav-link {
+  font-size: 1.1em !important;
 }
-.controls,
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
 }
-
-.controls {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 25px;
-  border-bottom: 1px solid #ccc;
-}
-
-.filters span {
-  margin: 0 8px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.filters span:first-child {
-  margin-left: 0;
-}
-
-.filters span.active {
-  color: #3c87ff;
-}
-
-.controls .clear-btn {
-  outline: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 13px;
-  border-radius: 7px;
-  padding: 7px 13px;
-  background: #3c87ff;
-}
-
-.task-box {
-  margin: 20px 25px;
-}
-
-.task-box .task {
-  list-style: none;
-  font-size: 17px;
-  margin-bottom: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ccc;
-}
-.task-box .task:last-child {
-  margin-bottom: 0;
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.task label {
-  display: flex;
-}
-.task label p.checked{
-  text-decoration: line-through;
-}
-
-.task label input {
-  margin-top: 6px;
-  margin-right: 12px;
-}
-.task .setting {
-  cursor: pointer;
-  position: relative;
-}
-.setting .task-menu {
+.carousel-caption {
   position: absolute;
-  padding: 5px 0;
-  right: -5px;
-  bottom: -65px;
-  z-index: 2;
-  transform: scale(0);
-  border-radius: 4px;
-  background: #fff;
-  transform-origin: top right;
-  transition: transform 0.2s ease;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  top: 50%;
+  transform: translateY(-50%);
 }
-.setting .task-menu.show{
-  transform: scale(1);
+.carousel-caption h1 {
+  font-size: 500;
+
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 200;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.fa-code {
+  color: #e54d26;
+}
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2163af;
+}
+.fa-code,
+.fa-bold,
+.fa-css3 {
+  font-size: 3cm;
+  margin: 1rem;
+}
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-telegram {
+  color: rgb(34, 148, 241);
+}
+.fa-instagram {
+  color: #e54d26;
 }
 
-.task-menu li {
-  height: 25px;
-  font-size: 16px;
-  padding: 17px 15px;
-  margin-bottom: 2px;
-  justify-self: flex-start;
+.fa-instagram:hover,
+.fa-telegram:hover {
+  color: #d5d5d5;
 }
-.task-menu li:last-child {
-  margin-bottom: 0;
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
 }
-.task-menu li:hover {
-  background: #f5f5f5;
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
-.task-menu li i {
-  padding-right: 8px;
+.img-fluid {
+  width: 400px;
+  height: 400px;
 }
-.updateComing{
-  text-align: center;
+/*---Media Queries --*/
+@media (max-width: 992px) {
 }
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url("img/mac.png");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
